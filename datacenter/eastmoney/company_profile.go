@@ -269,7 +269,7 @@ func (e EastMoney) QueryCompanyProfile(ctx context.Context, secuCode string) (Co
 	fc := e.GetFC(secuCode)
 
 	// 基本资料
-	apiurl := "https://emh5.eastmoney.com/api/GongSiGaiKuang/GetJiBenZiLiao"
+	apiurl := CompanyProfileUrl
 	reqData := map[string]interface{}{
 		"fc": fc,
 	}
